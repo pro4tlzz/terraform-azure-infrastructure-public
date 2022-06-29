@@ -17,3 +17,15 @@ variable "location" {
 variable "local_network_gateway_name" {
     type = string
 }
+
+variable "virtual_wan_name" {
+    type = string
+}
+
+variable "virtual_hub_subnet" {
+    type = string
+}
+
+variable "virtual_hub_name" {
+    type = string
+}

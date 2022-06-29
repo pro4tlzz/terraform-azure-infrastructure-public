@@ -9,6 +9,10 @@ module "azure-local-network-gateway" {
 
 module "ipsec-vpn" {
     source                     ="../modules/azure-ipsec-vpn"
-    local_network_gateway_name = module.azure-local-network-gateway.local_network_gateway_name
-    location                   = module.azure-local-network-gateway.location
+    resource_group_name        = module.azure-local-network-gateway.resource_group_name
+    resource_group_location    = module.azure-local-network-gateway.resource_group_location
+    virtual_wan_name           = var.virtual_wan_name
+    virtual_hub_subnet         = var.virtual_hub_subnet
+    virtual_hub_name           = var.virtual_wan_name
+
 }
