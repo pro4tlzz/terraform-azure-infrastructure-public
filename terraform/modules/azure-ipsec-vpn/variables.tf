@@ -17,3 +17,7 @@ variable "virtual_hub_subnet" {
 variable "virtual_hub_name" {
     type = string
 }
+
+variable "vpn_gateway_name" {
+    type = string
+}

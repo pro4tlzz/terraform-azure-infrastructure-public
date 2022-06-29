@@ -14,5 +14,5 @@ module "ipsec-vpn" {
     virtual_wan_name           = var.virtual_wan_name
     virtual_hub_subnet         = var.virtual_hub_subnet
     virtual_hub_name           = var.virtual_wan_name
-
+    vpn_gateway_name           = var.vpn_gateway_name
 }
