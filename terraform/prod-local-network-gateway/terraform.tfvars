@@ -1,8 +1,11 @@
 gateway_ip                 = "123"
-subnets                    = ["123"]
+subnets                    = ["10.10.70.0/24"]
 resource_group_name        = "resource-group-datacenter"
 location                   = "West Europe"
 local_network_gateway_name = "home-ipsec"
 virtual_wan_name           = "vwan1"
 virtual_hub_subnet         = "10.20.5.0/24"
 virtual_hub_name           = "vhub1"
+vpn_gateway_name           = "vgw1"
+vpn_gateway_connection_name= "vgwc1"
+vpn_site_name              = "rnet1"

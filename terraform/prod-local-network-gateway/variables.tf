@@ -33,3 +33,11 @@ variable "virtual_hub_name" {
 variable "vpn_gateway_name" {
     type = string
 }
+
+variable "vpn_gateway_connection_name" {
+    type = string
+}
+
+variable "vpn_site_name" {
+    type = string
+}
