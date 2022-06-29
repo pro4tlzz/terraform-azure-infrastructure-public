@@ -1,7 +1,5 @@
 module "azure-resource-group" {
     source                     ="../modules/azure-resource-group"
-    gateway_ip                 = var.gateway_ip
-    subnets                    = var.subnets
     resource_group_name        = var.resource_group_name
     location                   = var.location
 }

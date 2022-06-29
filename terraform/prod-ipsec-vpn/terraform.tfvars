@@ -1,4 +1,4 @@
-gateway_ip                 = "123"
+gateway_ip                 = "3124"
 subnets                    = ["10.10.70.0/24"]
 resource_group_name        = "resource-group-datacenter"
 location                   = "West Europe"
@@ -10,4 +10,4 @@ vpn_gateway_name           = "vgw1"
 vpn_gateway_connection_name= "vgwc1"
 vpn_site_name              = "rnet1"
 vpn_gateway_nat_rule_name  = "vpngwnatr1"
-gateway_ip_cidr            = "223/32"
+gateway_ip_cidr            = "123/32"
