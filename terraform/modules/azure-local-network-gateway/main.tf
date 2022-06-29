@@ -1,6 +1,9 @@
 resource "azurerm_resource_group" "datacenter-group" {
   name     = var.resource_group_name
   location = var.location
+  tags     = {
+    Terraform: "True"
+  }
 }
 
 resource "azurerm_local_network_gateway" "home" {
@@ -9,4 +12,7 @@ resource "azurerm_local_network_gateway" "home" {
   location            = azurerm_resource_group.datacenter-group.location
   gateway_address     = var.gateway_ip
   address_space       = var.subnets
+  tags     = {
+    Terraform: "True"
+  }
 }
