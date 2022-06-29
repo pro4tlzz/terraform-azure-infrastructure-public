@@ -30,6 +30,14 @@ variable "vpn_site_name" {
     type = string
 }
 
+variable "gateway_ip_cidr" {
+    type = string
+}
+
 variable "gateway_ip" {
+    type = string
+}
+
+variable "vpn_gateway_nat_rule_name" {
     type = string
 }

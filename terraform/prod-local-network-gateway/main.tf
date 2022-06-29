@@ -3,7 +3,6 @@ module "azure-local-network-gateway" {
     gateway_ip                 = var.gateway_ip
     subnets                    = var.subnets
     resource_group_name        = var.resource_group_name
-    local_network_gateway_name = var.local_network_gateway_name
     location                   = var.location
 }
 
@@ -17,5 +16,7 @@ module "ipsec-vpn" {
     vpn_gateway_name           = var.vpn_gateway_name
     vpn_gateway_connection_name= var.vpn_gateway_connection_name
     vpn_site_name              = var.vpn_site_name
+    gateway_ip_cidr            = var.gateway_ip_cidr
+    vpn_gateway_nat_rule_name  = var.vpn_gateway_nat_rule_name
     gateway_ip                 = var.gateway_ip
 }
