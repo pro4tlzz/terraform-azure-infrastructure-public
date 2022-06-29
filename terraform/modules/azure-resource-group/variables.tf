@@ -13,7 +13,3 @@ variable "resource_group_name" {
 variable "location" {
     type = string
 }
-
-variable "local_network_gateway_name" {
-    type = string
-}

@@ -41,3 +41,11 @@ variable "gateway_ip" {
 variable "vpn_gateway_nat_rule_name" {
     type = string
 }
+
+variable "local_network_gateway_name" {
+    type = string
+}
+
+variable "subnets" {
+    type = list(string)
+}
