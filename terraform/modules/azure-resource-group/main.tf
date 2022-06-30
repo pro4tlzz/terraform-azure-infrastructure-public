@@ -3,5 +3,6 @@ resource "azurerm_resource_group" "group" {
   location = var.resource_group_location
   tags     = {
     Terraform: "True"
+    Name: var.resource_group_name
   }
 }
