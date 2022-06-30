@@ -3,4 +3,6 @@ local_network_gateway_subnets = ["10.10.70.0/24"]
 resource_group_name        = "resource-group-datacenter"
 resource_group_location    = "West Europe"
 local_network_gateway_name = "home-ipsec"
-virtual_wan_name           =  "vwan"
+virtual_wan_name           = "vwan"
+virtual_hub_subnet         =  "10.10.72.0/23"
+virtual_hub_name           = "vhub"

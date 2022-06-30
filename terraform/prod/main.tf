@@ -19,3 +19,12 @@ module "azurerm-virtual-wan" {
     resource_group_location    = module.azure-resource-group.location
     virtual_wan_name           = var.virtual_wan_name
 }
+
+module "azurerm-virtual-hub" {
+    source                     ="../modules/azurerm-virtual-hub"
+    resource_group_name        = module.azure-resource-group.name
+    resource_group_location    = module.azure-resource-group.location
+    virtual_wan_id             = module.azurerm-virtual-wan.id
+    virtual_hub_name           = var.virtual_hub_name
+    virtual_hub_subnet         = var.virtual_hub_subnet
+}

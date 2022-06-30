@@ -37,3 +37,11 @@ variable "ARM_SUBSCRIPTION_ID" {
 variable "ARM_TENANT_ID" {
     type=string
 }
+
+variable "virtual_hub_subnet" {
+    type=string
+}
+
+variable "virtual_hub_name" {
+    type=string
+}
