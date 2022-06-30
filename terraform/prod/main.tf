@@ -12,3 +12,10 @@ module "azurerm-local-network-gateway" {
     gateway_ip                 = var.gateway_ip
     local_network_gateway_subnets = var.local_network_gateway_subnets
 }
+
+module "azurerm-virtual-wan" {
+    source                     ="../modules/azurerm-virtual-wan"
+    resource_group_name        = module.azure-resource-group.name
+    resource_group_location    = module.azure-resource-group.location
+    virtual_wan_name           = var.virtual_wan_name
+}
