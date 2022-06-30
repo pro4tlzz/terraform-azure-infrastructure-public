@@ -5,6 +5,12 @@ terraform {
       version = "=3.11.0"
     }
   }
+  cloud {
+    organization = "organization"
+    workspaces {
+    tags = ["ws1"]
+  }
+}
 }
 
 provider "azurerm" {
