@@ -6,6 +6,6 @@ variable "resource_group_location" {
     type = string
 }
 
-variable "virtual_wan_name" {
+variable "public_ip_name" {
     type=string
 }

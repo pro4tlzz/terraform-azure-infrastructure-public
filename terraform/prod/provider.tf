@@ -6,7 +6,7 @@ terraform {
     }
   }
   cloud {
-    organization = "organization"
+    organization = "org"
     workspaces {
     tags = ["ws1"]
   }
