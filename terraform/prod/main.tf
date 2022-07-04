@@ -18,6 +18,7 @@ module "azurerm-public-ip" {
     resource_group_name        = module.azure-resource-group.name
     resource_group_location    = module.azure-resource-group.location
     public_ip_name             = var.public_ip_name
+    public_ip_allocation_method = var.public_ip_allocation_method
 }
 
 module "azurerm-virtual-network" {

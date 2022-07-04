@@ -3,9 +3,9 @@ output "id" {
 }
 
 output "subnet_1" {
-    value = azurerm_virtual_network.vnet.subnet.*.id[0]
+    value = azurerm_virtual_network.vnet.subnet.*.id[1]
 }
 
 output "gateway_subnet" {
-    value = azurerm_virtual_network.vnet.subnet.*.id[1]
+    value = azurerm_virtual_network.vnet.subnet.*.id[0]
 }

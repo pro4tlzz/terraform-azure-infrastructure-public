@@ -38,6 +38,10 @@ variable "public_ip_name"  {
     type=string
 }
 
+variable "public_ip_allocation_method" {
+    type=string
+}
+
 variable "virtual_network_name" {
     type=string
 }
