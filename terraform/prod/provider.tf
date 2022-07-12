@@ -5,11 +5,6 @@ terraform {
       version = "=3.11.0"
     }
   }
-  cloud {
-    organization = "Org"
-    workspaces {
-    tags = ["WS1"]
-  }
 }
 }
 
