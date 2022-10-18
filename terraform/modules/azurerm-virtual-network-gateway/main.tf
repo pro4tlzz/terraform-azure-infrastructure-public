@@ -11,9 +11,9 @@ resource "azurerm_virtual_network_gateway" "vngw" {
   sku           = var.virtual_network_gateway_sku
 
   ip_configuration {
-    name                          = var.virtual_network_gateway_ip_config_name
-    public_ip_address_id          = var.virtual_network_gateway_ip_config_public_ip_id
-    subnet_id                     = var.virtual_network_gateway_ip_config_subnet_id
+    name                 = var.virtual_network_gateway_ip_config_name
+    public_ip_address_id = var.virtual_network_gateway_ip_config_public_ip_id
+    subnet_id            = var.virtual_network_gateway_ip_config_subnet_id
   }
 
 }

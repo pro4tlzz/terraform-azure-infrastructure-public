@@ -1,43 +1,43 @@
 variable "resource_group_name" {
-    type = string
+  type = string
 }
 
 variable "resource_group_location" {
-    type = string
+  type = string
 }
 
 variable "virtual_network_gateway_name" {
-    type = string
+  type = string
 }
 
 variable "virtual_network_gateway_type" {
-    type = string
+  type = string
 }
 
 variable "virtual_network_gateway_type_vpn_type" {
-    type = string
+  type = string
 }
 
 variable "virtual_network_gateway_active_or_passive" {
-    type = string
+  type = string
 }
 
 variable "virtual_network_gateway_bgp" {
-    type = string
+  type = string
 }
 
 variable "virtual_network_gateway_sku" {
-    type = string
+  type = string
 }
 
 variable "virtual_network_gateway_ip_config_public_ip_id" {
-    type = string
+  type = string
 }
 
 variable "virtual_network_gateway_ip_config_subnet_id" {
-    type = string
+  type = string
 }
 
 variable "virtual_network_gateway_ip_config_name" {
-    type =string
+  type = string
 }

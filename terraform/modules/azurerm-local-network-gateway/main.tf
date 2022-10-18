@@ -4,8 +4,8 @@ resource "azurerm_local_network_gateway" "lng" {
   location            = var.resource_group_location
   gateway_address     = var.gateway_ip
   address_space       = var.local_network_gateway_subnets
-  tags     = {
-    Terraform: "True"
-    Name: var.local_network_gateway_name
+  tags = {
+    Terraform : "True"
+    Name : var.local_network_gateway_name
   }
 }

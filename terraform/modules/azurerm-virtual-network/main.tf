@@ -12,11 +12,11 @@ resource "azurerm_virtual_network" "vnet" {
   subnet {
     name           = var.virtual_network_address_gateway_subnet_name
     address_prefix = var.virtual_network_address_gateway_subnet
-   # security_group = var.virtual_network_address_gateway_subnet
+    # security_group = var.virtual_network_address_gateway_subnet
   }
 
-  tags     = {
-    Terraform: "True"
+  tags = {
+    Terraform : "True"
     Name : var.virtual_network_name
   }
 }
